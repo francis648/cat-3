@@ -1,7 +1,11 @@
 <?php
 declare(strict_types=1);
 
-require_once __DIR__ . '/config.php';
+// Database configuration
+const DB_HOST = 'your-db-host';
+const DB_NAME = 'your-db-name';
+const DB_USER = 'your-db-user';
+const DB_PASS = 'your-db-password';
 
 function db(): PDO
 {
@@ -20,3 +24,4 @@ function db(): PDO
 
     return $pdo;
 }
+
